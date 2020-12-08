@@ -1,6 +1,6 @@
 import java.io.File
 
-object First {
+object Day1First {
     @JvmStatic
     fun main(args: Array<String>) {
         val entries = File("src/main/resources/day1.txt")
@@ -19,7 +19,7 @@ object First {
     }
 }
 
-object Second {
+object Day1Second {
     @JvmStatic
     fun main(args: Array<String>) {
         val entries = File("src/main/resources/day1.txt")
