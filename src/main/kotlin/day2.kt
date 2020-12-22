@@ -10,8 +10,7 @@ object Day2First {
     }
     @JvmStatic
     fun main(args: Array<String>) {
-        val passwordPolicies = File("src/main/resources/day2.txt")
-            .readLines()
+        val passwordPolicies = loadLines(2)
             .map { line ->
                 val (rangeString, letterString, passwordString) = line.split(" ")
                 val (start, end) = rangeString.split("-")
@@ -38,8 +37,7 @@ object Day2Second {
     }
     @JvmStatic
     fun main(args: Array<String>) {
-        val passwordPolicies = File("src/main/resources/day2.txt")
-            .readLines()
+        val passwordPolicies = loadLines(2)
             .map { line ->
                 val (rangeString, letterString, passwordString) = line.split(" ")
                 val (start, end) = rangeString.split("-")

@@ -3,8 +3,7 @@ import java.io.File
 object Day1First {
     @JvmStatic
     fun main(args: Array<String>) {
-        val entries = File("src/main/resources/day1.txt")
-            .readLines()
+        val entries = loadLines(1)
             .map(String::toInt)
         println(findAnswer(entries))
     }
@@ -22,8 +21,7 @@ object Day1First {
 object Day1Second {
     @JvmStatic
     fun main(args: Array<String>) {
-        val entries = File("src/main/resources/day1.txt")
-            .readLines()
+        val entries = loadLines(1)
             .map(String::toInt)
         println(findAnswer(entries))
     }
