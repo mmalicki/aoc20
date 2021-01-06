@@ -1,5 +1,3 @@
-import java.io.File
-
 object Day1First {
     @JvmStatic
     fun main(args: Array<String>) {
